@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 @RestController
 public class AnalyzeNotesRestController {
   private final CertificateService certificateService;
@@ -16,7 +18,7 @@ public class AnalyzeNotesRestController {
   }
 
   @PostMapping("/analyzeNotes")
-  public CertificateDTO analyzeNotes(@RequestBody StudentDTO notes){
+  public CertificateDTO analyzeNotes(@RequestBody @Valid StudentDTO notes){
     return certificateService.analyzeNotes(notes);
   }
 }

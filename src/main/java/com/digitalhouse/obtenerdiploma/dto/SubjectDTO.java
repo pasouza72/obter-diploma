@@ -10,7 +10,7 @@ import javax.validation.constraints.Pattern;
 public class SubjectDTO {
 
   @NotNull(message = "subject cannot be null")
-  @Pattern(regexp = "(^[A-Za-z\\s]{8,50})",
+  @Pattern(regexp = "(^[\\p{L}\\s]{8,50})",
             message = "the subject field must contain only letters and be between 8 and 50 characters")
   private String subject;
 

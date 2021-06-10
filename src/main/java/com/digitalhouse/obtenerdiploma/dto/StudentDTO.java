@@ -13,7 +13,7 @@ import java.util.List;
 public class StudentDTO {
 
     @NotNull(message = "name cannot be null")
-    @Pattern(regexp = "(^[A-Za-z\\s]{8,50})",
+    @Pattern(regexp = "(^[\\p{L}\\s]{8,50})",
             message = "the name must be between 8 and 50 characters")
     private String name;
 

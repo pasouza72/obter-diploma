@@ -1,0 +1,17 @@
+{
+  "name": "Kamilaaaa",
+  "subjects": [
+    {
+      "subject" : "Matematica",
+      "note" : 10
+    },
+    {
+      "subject" : "Físicaaaaaaaaaaa",
+      "note" : 7
+    },
+    {
+      "subject" : "Químicaaaaaaaaaa",
+      "note" : 6
+    }
+  ]
+}
